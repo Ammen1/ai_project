@@ -17,10 +17,18 @@ const Navbar = () => {
       </NavLink>
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
-        <li>
+        {/* <li>
           <NavLink to={"/login"} className="link ">
             <h1 className="text-lx text-cyan-500 text-lg mr-8  font-bold">
-              Login
+              login
+            </h1>
+          </NavLink>
+        </li> */}
+
+        <li>
+          <NavLink to={"/register"} className="link ">
+            <h1 className="text-lx text-cyan-500 text-lg mr-8  font-bold">
+              signup
             </h1>
           </NavLink>
         </li>
