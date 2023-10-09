@@ -35,7 +35,6 @@ function Home() {
     loading: true,
     posts: null,
   });
-  const [usernames, setUsernames] = useState({}); // State to store the usernames
 
   const [userCount, setUserCount] = useState(null);
 
@@ -78,13 +77,11 @@ function Home() {
   return (
     // <div className="">
     <main className="main-container mt-24">
-      <div className="main-title">
-        <h3>DASHBOARD</h3>
-      </div>
+      <div className="main-title"></div>
       <div className="main-cards">
         <div className="card">
           <div className="card-inner gap-2">
-            <h3>PRODUCTS</h3>
+            <h3>Image</h3>
             <BsFillArchiveFill className="card_icon" />
           </div>
           <h1>
@@ -93,14 +90,14 @@ function Home() {
         </div>
         <div className="card">
           <div className="card-inner gap-2">
-            <h3>CATEGORIES</h3>
+            <h3>Diseases</h3>
             <BsFillGrid3X3GapFill className="card_icon " />
           </div>
           <h1>3</h1>
         </div>
         <div className="card">
           <div className="card-inner gap-2">
-            <h3>CUSTOMERS</h3>
+            <h3>Farmer</h3>
             <BsPeopleFill className="card_icon" />
           </div>
           <h1>
@@ -109,17 +106,17 @@ function Home() {
         </div>
         <div className="card">
           <div className="card-inner gap-2">
-            <h3>ALERTS</h3>
+            <h3>Alerts</h3>
             <BsFillBellFill className="card_icon" />
           </div>
           <h1>0</h1>
         </div>
       </div>
-      <div className="charts">
-        <ResponsiveContainer width="100%" height="100%">
+      <div className="charts justify-center items-center ml-48">
+        <ResponsiveContainer className=" w-full h-full">
           <BarChart
-            width={500}
-            height={300}
+            width={1000}
+            height={1000}
             data={transformedData}
             margin={{
               top: 5,
@@ -136,38 +133,6 @@ function Home() {
             <Bar dataKey="diseases" fill="#d50000" />
             <Bar dataKey="severity" fill="#82ca9d" />
           </BarChart>
-        </ResponsiveContainer>
-
-        <ResponsiveContainer width="100%" height="100%">
-          <LineChart
-            width={500}
-            height={300}
-            data={transformedData}
-            margin={{
-              top: 5,
-              right: 30,
-              left: 20,
-              bottom: 5,
-            }}
-          >
-            <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="name" />
-            <YAxis />
-            <Tooltip />
-            <Legend />
-            <Line
-              type="monotone"
-              dataKey="diseases"
-              stroke="#d50000"
-              activeDot={{ r: 8 }}
-            />
-            <Line
-              type="monotone"
-              dataKey="severity"
-              stroke="#82ca9d"
-              activeDot={{ r: 8 }}
-            />
-          </LineChart>
         </ResponsiveContainer>
       </div>
     </main>

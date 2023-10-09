@@ -26,11 +26,7 @@ const DetectedImage = () => {
 
   return (
     <div className=" text-center">
-      {userCount !== null ? (
-        <div>Total Image: {userCount}</div>
-      ) : (
-        <p>Loading...</p>
-      )}
+      {userCount !== null ? <div>{userCount}</div> : <p>Loading...</p>}
     </div>
   );
 

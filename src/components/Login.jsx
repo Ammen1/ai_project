@@ -3,7 +3,7 @@ import styles from "../style";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axiosInstance from "../axios";
-import { robot, j, h, bul } from "../assets";
+import { bul } from "../assets";
 
 const Login = () => {
   const history = useNavigate();

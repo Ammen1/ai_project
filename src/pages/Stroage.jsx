@@ -86,7 +86,6 @@ const Stroage = () => {
     try {
       const formData = new FormData();
       formData.append("imageName", postData.disease);
-      // formData.append("id", postData.id);
       formData.append("user", 1);
       formData.append("image", postimage.image);
 
@@ -162,9 +161,6 @@ const Stroage = () => {
 
           {/* {showProgressBar && <ProgressBar progress={progress} />} */}
         </div>
-        {/* gradient start */}
-        {/* <div className="absolute z-[999] w-[20%] h-[100%] top-0 pink__gradient" /> */}
-        {/* <div className="absolute z-[3] w-[20%] h-[100%] rounded-full white__gradient bottom-40" /> */}
         <div className="absolute z-[999] bg-opacity-10 hidden sm:block w-[10%] h-[15%] border-secondary bg-blend-color-dodge mr-15 right-20 bottom-20 blue__gradient rounded-full  animate-spin" />
         {/* gradient end */}
       </div>

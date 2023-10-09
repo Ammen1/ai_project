@@ -16,23 +16,7 @@ const Navbar = () => {
         />
       </NavLink>
 
-      <ul className="list-none sm:flex hidden justify-end items-center flex-1">
-        {/* <li>
-          <NavLink to={"/login"} className="link ">
-            <h1 className="text-lx text-cyan-500 text-lg mr-8  font-bold">
-              login
-            </h1>
-          </NavLink>
-        </li> */}
-
-        <li>
-          <NavLink to={"/register"} className="link ">
-            <h1 className="text-lx text-cyan-500 text-lg mr-8  font-bold">
-              signup
-            </h1>
-          </NavLink>
-        </li>
-      </ul>
+      <ul className="list-none sm:flex hidden justify-end items-center flex-1"></ul>
 
       <div className="sm:hidden flex flex-1 justify-end items-center">
         <img

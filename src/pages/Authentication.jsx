@@ -15,11 +15,7 @@ const Authentication = () => {
   }, []);
   return (
     <div className=" text-center">
-      {userCount !== null ? (
-        <div>Total users: {userCount}</div>
-      ) : (
-        <p>Loading...</p>
-      )}
+      {userCount !== null ? <div> {userCount}</div> : <p>Loading...</p>}
     </div>
   );
 };

@@ -1,29 +1,18 @@
 import { useEffect, useState } from "react";
 import { useRef } from "react";
-import SubMenu from "./SubMenu";
 import { motion } from "framer-motion";
 
 // * React icons
 import { IoIosArrowBack } from "react-icons/io";
-import { SlSettings } from "react-icons/sl";
 import { AiOutlineAppstore } from "react-icons/ai";
 import { BsPerson } from "react-icons/bs";
-import { HiOutlineDatabase } from "react-icons/hi";
-import { AiOutlineEnvironment } from "react-icons/ai";
-import { TbReportAnalytics } from "react-icons/tb";
-import { RiBuilding3Line } from "react-icons/ri";
 import { useMediaQuery } from "react-responsive";
 import { MdMenu } from "react-icons/md";
 import { NavLink, useLocation, useRoutes } from "react-router-dom";
-import { e } from "../../assets";
+
 import {
-  BsCart3,
-  BsGrid1X2Fill,
   BsFillArchiveFill,
-  BsFillGrid3X3GapFill,
   BsPeopleFill,
-  BsListCheck,
-  BsMenuButtonWideFill,
   BsFillGearFill,
 } from "react-icons/bs";
 
@@ -78,19 +67,6 @@ const Sidebar = () => {
         },
       };
 
-  const subMenusList = [
-    {
-      name: "build",
-      icon: RiBuilding3Line,
-      menus: ["auth", "app settings", "stroage", "hosting"],
-    },
-    {
-      name: "analytics",
-      icon: TbReportAnalytics,
-      menus: ["dashboard", "realtime", "events"],
-    },
-  ];
-
   return (
     <div>
       <div
@@ -126,7 +102,7 @@ const Sidebar = () => {
                   size={15}
                   className="min-w-max hover:animate-pulse items-left text-white"
                 />
-                <h1 className=" text-white text-lx mr-6">Customers</h1>
+                <h1 className=" text-white text-lx mr-6">Farmer</h1>
               </NavLink>
             </li>
             <li className="sidebar-list-item">
@@ -135,7 +111,9 @@ const Sidebar = () => {
                   size={20}
                   className="min-w-max  hover:animate-pulse text-white "
                 />
-                <h1 className="text-white text-lx mr-6  font-bold">Products</h1>
+                <h1 className="text-white text-lx mr-6  font-bold">
+                  Uploaad image
+                </h1>
               </NavLink>
             </li>
 
@@ -155,7 +133,7 @@ const Sidebar = () => {
                   size={20}
                   className="icon min-w-max hover:animate-pulse items-left text-white"
                 />
-                <h1 className="text-white text-lx mr-10  font-bold">Setting</h1>
+                <h1 className="text-white text-lx mr-10  font-bold">Result</h1>
               </NavLink>
             </li>
           </ul>
