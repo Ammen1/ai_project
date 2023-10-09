@@ -46,18 +46,6 @@ export const footerLinks = [
         name: "Developer tem",
         link: "",
       },
-      // {
-      //   name: "Suggestions",
-      //   link: "/",
-      // },
-      // {
-      //   name: "Blog",
-      //   link: "/",
-      // },
-      // {
-      //   name: "Newsletters",
-      //   link: "/",
-      // },
     ],
   },
   {
