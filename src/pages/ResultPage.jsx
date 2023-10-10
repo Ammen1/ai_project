@@ -45,19 +45,18 @@ const ResultPage = () => {
         <h1>Original image</h1>
         <img src={response.image} alt="Prediction" className="card-image" />
         <div className="card-content">
-          {/* <h1 className="font-bold">{response.imageName}</h1> */}
-          <h1 className="font-bold">
-            <span className="text-red-900 text-gradient">Diseases::</span>{" "}
+          <h1 className="font-bold text-white">
+            <span className=" text-black">Diseases:</span>{" "}
             {response.diseases_summary}
           </h1>
 
-          <h1 className="font-bold">
-            <span className="text-red-900 text-gradient">Severity:</span>{" "}
-            {response.severity}
+          <h1 className="font-bold text-white">
+            <span className=" text-black">Severity:</span>{" "}
+            {(response.severity * 100).toFixed(2)}{" "}
+            <span className=" font-poppins text-red-700 font-bold">%</span>
           </h1>
-          <h1 className="font-bold">
-            <span className="text-gray-800 text-gradient">Date:</span>{" "}
-            {response.date}
+          <h1 className="font-bold text-white">
+            <span className=" text-black">Date:</span> {response.date}
           </h1>
 
           <ul>

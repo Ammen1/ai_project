@@ -1,11 +1,8 @@
 // import React from "react";
 import React, { useEffect, useState } from "react";
-import Posts from "../admin/posts";
-import PostLoadingComponent from "../posts/postLoading";
-// import DetectedImage from "../pages/DetectedImage ";
 import DetectedImage from "./DetectedImage";
 import Authentication from "./Authentication";
-// import axiosInstance from "../axios";
+
 import "../index.css";
 import axios from "axios";
 import {
@@ -17,7 +14,6 @@ import {
 import {
   BarChart,
   Bar,
-  Cell,
   XAxis,
   YAxis,
   CartesianGrid,
@@ -30,13 +26,6 @@ import {
 
 function Home() {
   const [data, setData] = useState([]);
-  const PostLoading = PostLoadingComponent(Posts);
-  const [appState, setAppState] = useState({
-    loading: true,
-    posts: null,
-  });
-  const [usernames, setUsernames] = useState({}); // State to store the usernames
-
   const [userCount, setUserCount] = useState(null);
 
   // Fetch data from the backend API

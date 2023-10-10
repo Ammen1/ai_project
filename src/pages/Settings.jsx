@@ -43,20 +43,18 @@ const Settings = () => {
             />
           </Link>
           <div className="card-content">
-            <h1 className="font-bold">
-              <span className="text-red-900 text-gradient ">Severity:</span>{" "}
-              {prediction.severity}
+            <h1 className="font-bold text-white">
+              <span className="text-black  ">Severity:</span>{" "}
+              {(prediction.severity * 100).toFixed(2)}
             </h1>
-            <h1 className="font-bold">
-              <span className="text-gray-800 text-gradient ">diseases=</span>{" "}
+            <h1 className="font-bold text-white">
+              <span className="text-black ">diseases=</span>{" "}
               {prediction.diseases_summary}
             </h1>
-            <h1 className="font-bold">
-              <span className="text-gray-800 text-gradient ">Date:</span>{" "}
-              {prediction.date}
+            <h1 className="font-bold text-white">
+              <span className="text-black  ">Date:</span> {prediction.date}
             </h1>
             <p>
-              Diseases:{" "}
               {prediction.diseases
                 ? prediction.diseases.map((disease) => disease.id).join(", ")
                 : "No diseases"}
