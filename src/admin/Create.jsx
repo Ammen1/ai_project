@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import axiosInstance from "../axios";
-// import { useHistory } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 const Create = () => {

@@ -129,7 +129,7 @@ const Sidebar = () => {
 
             <li className="sidebar-list-item">
               <NavLink to={"/settting"} className="link ">
-                <BsFillGearFill
+                <AiOutlineAppstore
                   size={20}
                   className="icon min-w-max hover:animate-pulse items-left text-white"
                 />

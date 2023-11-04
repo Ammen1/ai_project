@@ -12,11 +12,16 @@ const DetectedImage = () => {
   });
 
   useEffect(() => {
-    axiosInstance.get().then((res) => {
-      const allPosts = res.data;
-      setAppState({ loading: false, posts: allPosts });
-      console.log(res.data);
-    });
+    axiosInstance
+      .get()
+      .then(() => {
+        const allPosts = res.data;
+        setAppState({ loading: false, posts: allPosts });
+        console.log(res.data);
+      })
+      .catch.error((error) => {
+        console.error("Error Happen when Fetching please try agian: ", error);
+      });
   }, []);
 
   const { loading, posts } = appState; // Destructure posts from appState

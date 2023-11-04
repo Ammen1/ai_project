@@ -22,7 +22,7 @@ const Settings = () => {
   }, []);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <div>Loading</div>;
   }
 
   // Sort predictions by date in descending order
@@ -43,15 +43,15 @@ const Settings = () => {
             />
           </Link>
           <div className="card-content">
-            <h1 className="font-bold text-white">
+            <h1 className="font-bold text-yellow-300">
               <span className="text-black  ">Severity:</span>{" "}
               {(prediction.severity * 100).toFixed(2)}
             </h1>
-            <h1 className="font-bold text-white">
+            <h1 className="font-bold text-yellow-300">
               <span className="text-black ">diseases=</span>{" "}
               {prediction.diseases_summary}
             </h1>
-            <h1 className="font-bold text-white">
+            <h1 className="font-bold text-yellow-300">
               <span className="text-black  ">Date:</span> {prediction.date}
             </h1>
             <p>
