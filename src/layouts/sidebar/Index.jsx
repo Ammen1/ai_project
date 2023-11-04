@@ -5,16 +5,10 @@ import { motion } from "framer-motion";
 // * React icons
 import { IoIosArrowBack } from "react-icons/io";
 import { AiOutlineAppstore } from "react-icons/ai";
-import { BsPerson } from "react-icons/bs";
 import { useMediaQuery } from "react-responsive";
 import { MdMenu } from "react-icons/md";
 import { NavLink, useLocation, useRoutes } from "react-router-dom";
-
-import {
-  BsFillArchiveFill,
-  BsPeopleFill,
-  BsFillGearFill,
-} from "react-icons/bs";
+import { BsFillArchiveFill, BsPeopleFill, BsPerson } from "react-icons/bs";
 
 const Sidebar = () => {
   let isTabletMid = useMediaQuery({ query: "(max-width: 768px)" });
